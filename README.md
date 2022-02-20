@@ -4,7 +4,7 @@
 
 ## :page_with_curl: About
 
-Project of HTML, CSS, and JavaScript developed by me ([Raphael Martins](https://www.linkedin.com/in/raphaelameidamartins/)) and [Bruna Cardoso](https://www.linkedin.com/in/bruna-cardoso-38536916b/) at the end of Unit 6 ([Principles of Web Development Module](https://github.com/raphaelalmeidamartins/trybe_exercicios/tree/main/1_fundamentos-do-desv-web)) of the [Trybe](https://www.betrybe.com)'s Web Development course. I was approved with 100% of the mandatory and optional requirements met.
+Project of HTML, CSS, and JavaScript developed by me ([Raphael Martins](https://www.linkedin.com/in/raphaelameidamartins/)) and [Bruna Cardoso](https://www.linkedin.com/in/bruna-cardoso-38536916b/) at the end of Unit 6 ([Principles of Web Development Module](https://github.com/raphaelalmeidamartins/trybe_exercicios/tree/main/1_fundamentos-do-desv-web)) of [Trybe](https://www.betrybe.com)'s Web Development course. I was approved with 100% of the mandatory and optional requirements met.
 
 We developed a responsive web page with forms.
 
