@@ -10,6 +10,12 @@ We developed a responsive web page with forms.
 
 [Click here](https://raphaelalmeidamartins.github.io/trybewarts/) to check out the final version of the project on your browser.
 
+## :man_technologist: Developed Skills
+
+* Develop a form with HTML and CSS
+* Work in pairs
+* Use CSS to implement a responsive layout
+
 ## :hammer_and_wrench: Tools
 
 * HTML5
