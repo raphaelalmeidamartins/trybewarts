@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Lora, serif;
 }
 
 body {
-  background-color: rgb(50, 53, 61);
+  background-color: #32353d;
 }
 
 #page-container {
@@ -23,11 +21,17 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: rgb(50, 167, 145);
-  justify-content: space-between;
-  align-items: center;
+  background-color: #32a791;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
   padding: 10px;
   color: white;
@@ -42,34 +46,49 @@ body {
 }
 
 .trybewarts-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 input {
-  border: 1px solid rgb(50, 167, 145);
+  border: 1px solid #32a791;
   border-radius: 7px;
   padding: 10px;
 }
 
 select {
-  background-color: rgb(136, 233, 215);
+  background-color: #88e9d7;
   border-radius: 7px;
   padding: 10px 5px;
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   max-width: 1300px;
   margin: 0 auto;
 }
 
 #evaluation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 675px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px;
   color: white;
 }
@@ -85,47 +104,63 @@ main {
 }
 
 hr {
-  border: 1px solid rgb(50, 167, 145);
+  border: 1px solid #32a791;
   margin: 25px 0;
 }
 
 .line-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .line-form * {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .technologies-form {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .group label {
   width: 50px;
 }
 
-.subject , #agreement {
+.subject, #agreement {
   margin-right: 10px;
 }
 
 .column-form {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .column-form * {
   padding: 0 0 10px;
 }
 
-input , textarea , select {
+input, textarea, select {
   font-size: 1rem;
 }
 
@@ -144,22 +179,34 @@ button {
 }
 
 .feedback-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #label-rate {
-  flex-direction: row;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-#label-family , #label-content , #label-rate , #label-textarea {
+#label-family, #label-content, #label-rate, #label-textarea {
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-#label-family , #label-content , #label-rate {
+#label-family, #label-content, #label-rate {
   margin-bottom: 10px;
 }
 
@@ -172,11 +219,12 @@ button {
   width: 100%;
   border-radius: 7px;
   resize: none;
-  border: 1px solid rgb(50, 167, 145);
+  border: 1px solid #32a791;
 }
 
 #counter {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #submit-btn {
@@ -186,7 +234,7 @@ button {
 }
 
 #submit-btn:disabled {
-  background-color: rgb(160, 160, 160);
+  background-color: #a0a0a0;
   cursor: not-allowed;
 }
 
@@ -200,6 +248,8 @@ button {
 
 #user-information {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
   word-wrap: break-word;
@@ -210,105 +260,103 @@ button {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 0;
   width: 100%;
-  justify-content: center;
-  background-color: rgb(60, 64, 74);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3c404a;
   color: white;
   padding: 20px;
 }
 
-@media screen and ( max-width : 636px ) {
-
+@media screen and (max-width: 636px) {
   #trybewarts-header-title {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   .trybewarts-header-logo {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   .trybewarts-login {
     display: none;
   }
-
   main {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #evaluation-form {
     width: 100%;
   }
-
   #evaluation-form h1 {
     font-size: 30px;
     margin-bottom: 20px;
   }
-
-  #input-name , #input-lastname , #input-email {
+  #input-name, #input-lastname, #input-email {
     width: 100%;
     margin-bottom: 10px;
   }
-
   #trybewarts-forms-logo {
     width: 95%;
   }
-
   .line-form {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .feedback-form label {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-
   #label-rate {
     width: 100%;
   }
-
   #label-content {
     margin-top: 20px;
   }
-
-  #label-family , #label-content , #label-rate {
+  #label-family, #label-content, #label-rate {
     margin-bottom: 20px;
   }
 }
 
-@media screen and ( min-width : 637px ) {
-
+@media screen and (min-width: 637px) {
   .trybewarts-login * {
     border-radius: 7px;
     margin-left: 15px;
     padding: 10px;
     width: 50%;
   }
-
-  #input-name , #input-email {
+  #input-name, #input-email {
     margin-right: 10px;
   }
-
-  #input-name , #input-lastname {
+  #input-name, #input-lastname {
     margin-bottom: 10px;
   }
-
   #user-information {
     max-width: 500px;
     position: absolute;
     top: 150px;
     padding: 50px;
-    color: rgb(50, 53, 61);
-    transform: skewY(-2deg);
+    color: #32353d;
+    -webkit-transform: skewY(-2deg);
+            transform: skewY(-2deg);
   }
-
-  #user-information p , #user-information strong {
+  #user-information p, #user-information strong {
     font-family: Moon Dance, cursive;
     font-size: 25px;
   }
-
   #letter {
     display: block;
     width: 100%;
@@ -316,18 +364,21 @@ footer {
   }
 }
 
-@media screen and ( min-width : 637px ) and ( max-width : 1119px ) {
-
+@media screen and (min-width: 637px) and (max-width: 1119px) {
   #trybewarts-header-title {
     margin-right: 10px;
   }
-
   .trybewarts-header-logo {
     margin-right: 10px;
   }
-
   main {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+/*# sourceMappingURL=style.css.map */
